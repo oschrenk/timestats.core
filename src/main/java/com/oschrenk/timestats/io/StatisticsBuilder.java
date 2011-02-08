@@ -126,7 +126,6 @@ public class StatisticsBuilder {
 	 *
 	 * @param csvFile
 	 *            the csv file
-	 * @return the int
 	 */
 	private void readFile(final File csvFile) {
 		CsvReader csv;
@@ -142,7 +141,6 @@ public class StatisticsBuilder {
 				add(title, entry);
 			}
 
-			// TODO better error handling, stack trace seems to be lost
 		} catch (FileNotFoundException e) {
 			exceptionHandler.handle(new StatisticsCreationException(String
 					.format("Error in %s", csvFile), e));
