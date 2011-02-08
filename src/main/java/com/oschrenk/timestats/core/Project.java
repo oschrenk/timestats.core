@@ -13,10 +13,10 @@ import com.oschrenk.timestats.util.EntryComparator;
 public class Project {
 
 	/** The title. */
-	String title;
+	private final String title;
 
 	/** The entries. */
-	Set<Entry> entries;
+	private final Set<Entry> entries;
 
 	/**
 	 * Instantiates a new project.
@@ -57,7 +57,5 @@ public class Project {
 	public void add(final Entry entry) {
 		entries.add(entry);
 	}
-
-
 
 }
